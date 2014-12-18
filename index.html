@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Neomagazin maker</title>
+  <style>
+    html, body { height: 100%; overflow: hidden; }
+    body {
+      font-size: 24px;
+      font-size: 2vw;
+      text-align: center;
+      font-family: sans-serif;
+    }
+
+    h1 {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      line-height: 1.5em;
+
+      top: 50%;
+      top: 50vh;
+
+      margin-top: -5em;
+      margin-top: -5vw;
+    }  
+  </style>
+</head>
+<body>
+  <h1 id="slogan">Triceratops grübelt...</h1>
+  <noscript>
+    <h2>Hmm, dein Browser ist so alt wie die Dinos? Schalte Javascript ein, bitte :)</h2>
+  </noscript>
+
+  <button onclick="window.location.reload()">Noch einer, bitte!</button>
+  
+  <script>
+    var topics = [
+    "Adolf Hitler",
+    "Sami Slimani",
+    "Sterbehilfe",
+    "Darmkrebs",
+    "Kinderarbeit",
+    "Ebola",
+    "Weibliche Beschneidung",
+    "Zwangsehe",
+    "Bukake"
+  ], punchlines = [
+    "- Sebastian Edathy gefällt das!",
+    "bringt Kinderaugen zum strahlen!",
+    "sollte man nicht zu ernst nehmen!",
+    "happens!",
+    "keeps the doctor away!",
+    "ist nur einmal im Jahr!",
+    "ist was ganz Natürliches!",
+    "hat noch niemandem geschadet!",
+    "is a dancer!",
+    "macht die Katze froh!"
+  ];
+
+  var slogan = topics[Math.floor(Math.random() * topics.length)] + " " + punchlines[Math.floor(Math.random() * punchlines.length)];
+  document.getElementById("slogan").textContent = slogan;
+  </script>
+</body>
+</html>
