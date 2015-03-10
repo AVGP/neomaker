@@ -1,0 +1,6 @@
+CACHE MANIFEST
+# v1
+
+# Explicitly cached 'master entries'.
+CACHE:
+index.html
